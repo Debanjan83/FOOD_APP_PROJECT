@@ -1,0 +1,238 @@
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    background: url('https://th.bing.com/th/id/OIP.9kGAzVBcETtnnD1LaeRhBQHaE8?w=272&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7') center/cover no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.8);
+    z-index: -2;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-custom .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: #f8c146;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.animated-icon span {
+    background: #f8c146;
+}
+
+.navbar-nav.three-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav.three-bar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+.admin-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 20px 20px;
+    margin-bottom: 9px;
+}
+
+.admin-container {
+    text-align: center;
+    padding: 83px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.admin-heading {
+    font-size: 3rem;
+    color: #f8c146;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.admin-subtext {
+    font-size: 1.25rem;
+    color: #fefefe;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.form-section {
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 62px auto;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.form-section:hover {
+    transform: translateY(-4px);
+}
+
+.form-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #e63946;
+    margin-bottom: 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.form-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e63946;
+    margin: 10px auto 0;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    height: 45px;
+    padding-left: 45px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+    outline: none;
+}
+
+#fid.form-control {
+    background: url('https://img.icons8.com/ios-filled/50/000000/hashtag-large.png') no-repeat 10px center;
+    background-size: 20px;
+}
+
+#oqty.form-control {
+    background: url('https://img.icons8.com/ios-filled/50/000000/add-shopping-cart.png') no-repeat 10px center;
+    background-size: 20px;
+}
+
+.btn-dark {
+    border-radius: 25px;
+    padding: 10px 40px;
+    font-weight: bold;
+    background-color: #222;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #c62828;
+    color: #fff;
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px 0;
+    color: #ccc;
+    font-size: 0.9rem;
+    position: fixed;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+@media (max-width: 992px) {
+    .admin-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-heading {
+        font-size: 2rem;
+    }
+    .admin-subtext {
+        font-size: 1rem;
+    }
+    .form-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-heading {
+        font-size: 1.6rem;
+    }
+    .admin-subtext {
+        font-size: 0.95rem;
+    }
+    .form-section {
+        padding: 15px;
+        width: 95%;
+    }
+}

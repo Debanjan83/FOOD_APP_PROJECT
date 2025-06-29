@@ -1,0 +1,110 @@
+body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-image {
+            background: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1740&q=80') no-repeat center center/cover;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+            filter: brightness(0.4);
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -1;
+        }
+
+        .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-custom .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: #f8c146;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+        .admin-container {
+            padding-top: 100px;
+            padding-bottom: 60px;
+            text-align: center;
+            flex: 1 0 auto;
+        }
+
+        .admin-heading {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f8c146;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            margin-bottom: 30px;
+        }
+
+        .admin-subtext {
+            font-size: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            color: #fefefe;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        footer {
+    background-color: #111;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+        }
+.custom-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.animated-icon span {
+    background: #f8c146;
+}
+
+.navbar-nav.three-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav.three-bar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}

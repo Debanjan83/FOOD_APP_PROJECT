@@ -1,0 +1,229 @@
+:root {
+    --primary: #dc3545;
+    --primary-dark: #c82333;
+    --accent: #e63946;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1740&q=80') no-repeat center/cover;
+    z-index: -1;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-custom .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: #f8c146;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.animated-icon span {
+    background: #f8c146;
+}
+
+.navbar-nav.three-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav.three-bar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+.admin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    .admin-section {
+        flex-direction: row;
+        align-items: center;
+        padding: 50px;
+    }
+}
+
+.search-form {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto 0;
+    transition: all 0.3s ease;
+}
+
+.search-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.search-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--accent);
+    text-transform: uppercase;
+    animation: pulse 1.5s infinite;
+    will-change: transform;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.form-control {
+    height: 45px;
+    padding-left: 45px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.2);
+    outline: none;
+}
+
+#fname.form-control {
+    background-image: url('https://img.icons8.com/ios-filled/50/000000/meal.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+}
+
+.table-container {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.table-container h2 {
+    text-align: center;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #fcebea;
+}
+
+.table th,
+.table td {
+    vertical-align: middle !important;
+    font-size: 1rem;
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-tagline {
+    margin-top: 80px;
+    padding-top: 60px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.animated-heading {
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.btn {
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
